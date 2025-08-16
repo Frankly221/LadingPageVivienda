@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>-
+  <link rel="stylesheet" href="ambientes.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- img -->
+   <!-- <link rel="preload" as="image" href="/img/hero.webp" type="image/webp"/> -->
+   <link rel="preload" as="image" href="/img/lcc.webp" type="image/webp"/>
+   <link rel="preload" as="image" href="/img/logo-vivienda.png" type="image/png"/>
+   <link rel="preload" as="image" href="/img/logo-vivienda-oscuro.png" type="image/png"/>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="logo">
+        <img src="/img/logo-vivienda-oscuro.png" alt="logo" loading="lazy">
+        <div>
+          <strong>LIMA</strong><br>
+          <span>CENTRO DE<br>CONVENCIONES</span>
+        </div>
+      </div>
+      <button class="header__menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <nav class="header__nav">
+        <a href="#" class="header__link">Inicio</a>
+        <a href="ambientes.html" class="header__link">Nosotros</a>
+        <a href="#" class="header__link">Ambientes</a>
+        <a href="#" class="header__link">Calendario</a>
+        <a href="#" class="header__link">Noticias</a>
+        <a href="#" class="header__link">Cotiza tu evento</a>
+        <button class="btn-search">
+          <span class="material-symbols-outlined" style="font-weight: 600;">search</span>
+        </button>
+      </nav>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  
+  
+  <section id="hero">
+    <div class="hero__header">
+      <div class="logo">
+        <div>
+          <strong>Nosotros</strong><br>
+        </div>
+      </div>
+      <span class="tel">+(51) 399 3600</span>
+    </div>
+  </section>
+  
+ 
+    <section id="why">
+    <h2 class="title">Ubicación</h2>
+  <div class="location-description">
+       <p class="location-description__text">
+      Estamos ubicados <br> estratégicamente en el Centro <br> Cultura de la Nación en el distrito <br> de San Borja, en Lima,
+      junto al<br> ministerio de Cultura, a museo de<br> la nación y al Banco de la nación.<br>
+      Al frente tenemos al ministerio de<br> Educacion y a la histórico huaca<br> de San Borja.
+    </p>
+    <div class="contenedor-ubicacion-img">
+      <img class="ubicacion-img" src="/img/ubicacion.jpg" alt="Ubicación">
+    </div>
+  </div>
+  </section>
+  
+
+   
+  
+  
+  <section id="where">
+    <h2>¿Cómo llegar?</h2>
+    <main>
+      <article>
+        <p>Paradas más cercanas:</p>
+        <ul style="list-style: disc; padding-left: 1rem;">
+          <li>
+            <p>Avenida San Luis, 1849 está a 435 m de distancia, 7 minutos caminando.</p>
+          </li>
+          <li>
+            <p>Estación La Cultura está a 581 m de distancia, 9 minutos caminando.</p>
+          </li>
+          <li>
+            <p>Javier Prado Este está a 587 m de distancia, 9 minutos caminando.</p>
+          </li>
+          <li>
+            <p>Canadá está a 721 m de distancia, 11 minutos caminando.</p>
+          </li>
+          <li>
+            <p>Avenida San Luis,1126 está a 731 m de distancia, 11 minutos caminando.</p>
+          </li>
+        </ul>
+        <p><strong>Líneas de autobús:</strong> <u>1404</u>, <u>2702</u>, <u>6901</u>, <u>8104</u>,<u>1057B</u> y <u>OM62</u></p>
+      </article>
+      <div class="map" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR15Bq5OZHXfINl34Ldh_C1z-JzEh8KxEZANg&s');">
+      </div>
+    </main>
+  </section>
+  
+  <footer>
+    <div class="footer__content">
+      <div class="logo">
+        <img src="/img/logo-vivienda.png" alt="logo" loading="lazy">
+        <div>
+          <strong>LIMA</strong><br>
+          <span>CENTRO DE<br>CONVENCIONES</span>
+        </div>
+      </div>
+      <article>
+        <div>
+          <strong>Copyright © 2019 - LIMA <br> CENTRO DE CONVENCIONES</strong>
+          <p>Ministerio de Vivienda,<br> Construcción y Saneamiento</p>
+        </div>
+        <p><strong>T:</strong> +(51) 399 3600</p>
+        <p><strong>D:</strong> Av. de la Arqueología N°172<br> San Borja - Lima</p>
+      </article>
+      <ul class="no-decoration">
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+          </span>
+        </li>
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>
+          </span>
+        </li>
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+          </span>
+        </li>
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+          </span>
+        </li>
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

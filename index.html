@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>-
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- img -->
+   <!-- <link rel="preload" as="image" href="/img/hero.webp" type="image/webp"/> -->
+   <link rel="preload" as="image" href="/img/lcc.webp" type="image/webp"/>
+   <link rel="preload" as="image" href="/img/logo-vivienda.png" type="image/png"/>
+   <link rel="preload" as="image" href="/img/logo-vivienda-oscuro.png" type="image/png"/>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="logo">
+        <img src="/img/logo-vivienda-oscuro.png" alt="logo" loading="lazy">
+        <div>
+          <strong>LIMA</strong><br>
+          <span>CENTRO DE<br>CONVENCIONES</span>
+        </div>
+      </div>
+      <button class="header__menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <nav class="header__nav">
+        <a href="#" class="header__link">Inicio</a>
+        <a href="ambientes.html" class="header__link">Ambientes</a>
+        <a href="#" class="header__link">Calendario</a>
+        <a href="#" class="header__link">Noticias</a>
+        <a href="#" class="header__link">Cotiza tu evento</a>
+               <a href="#" class="header__link">Contacto</a>
+        <button class="btn-search">
+          <span class="material-symbols-outlined" style="font-weight: 600;">search</span>
+        </button>
+      </nav>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  
+  
+<section id="hero">
+    <video autoplay muted loop playsinline id="hero-video">
+  <source src="/img/video.mp4" type="video/mp4">
+  <source src="/img/video.webm" type="video/webm">
+    </video>
+
+  <div class="hero__header">
+    <select name="languaje" id="languaje">
+      <option value="es" autofocus>Es</option>
+      <option value="en">En</option>
+    </select>
+    <div class="logo">
+      <img src="/img/logo-vivienda.png" alt="logo" loading="lazy">
+      <div>
+        <strong>LIMA</strong><br>
+        <span>CENTRO DE<br>CONVENCIONES</span>
+      </div>
+    </div>
+    <span class="tel">+(51) 399 3600</span>
+  </div>
+
+  <article class="hero__filter">
+    <select name="sala" id="sala">
+      <option value="sala" autofocus>Sala</option>
+    </select>
+    <input type="date" name="fecha_inicio" id="fecha_inicio">
+    <input type="date" name="fecha_fin" id="fecha_fin">
+    <select name="aforo" id="aforo">
+      <option value="aforo" autofocus>Aforo</option>
+    </select>
+    <button class="btn-filter">Ver disponibilidad</button>
+  </article>
+</section>
+  
+
+  <section id="why">
+    <h2 class="title">¿Por qué LCC?</h2>
+    <p>
+      El proyecto y la construcción del Lima Centro de Convenciones (LCC) se enmarcan en el contexto del
+      compromiso que el Estado Peruano adquirió con el Banco Mundial y con el Fondo Monetario
+      Internacional para celebrar en Lima la Junta de Gobernadores del año 2015.
+    </p>
+    <p>
+      El nuevo edificio se encuentra estratégicamente situado en el Centro Cultural de la Nación (CCN), junto
+      al Museo de La Nación, el Ministerio de Educación, la nueva sede del Banco de La Nación o la huaca de
+      San Borja, en la esquina de Av. Arqueología con Av. Del Comercio, distrito de San Borja, Lima, Perú.
+    </p>
+    </section>
+  
+  <section id="important">
+    <button class="btn-slider prev">
+      <span class="material-symbols-outlined">chevron_left</span>
+    </button>
+    <button class="btn-slider next">
+      <span class="material-symbols-outlined">chevron_right</span>
+    </button>
+    <swiper-container id="important-swiper" slides-per-view="1" speed="500" loop="true" css-mode="true">
+      <swiper-slide>
+        <article class="important__card" style="--img-card-important: url('/img/morado.webp');">
+          <span>CONVIVIENDA</span>
+          <h2>Más de 1000 asistentes</h2>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="important__card" style="--img-card-important: url('/img/sala.webp');">
+          <span>CONVIVIENDA</span>
+          <h2>Más de 18 salas</h2>
+        </article>
+      </swiper-slide>
+      <swiper-slide>
+        <article class="important__card" style="--img-card-important: url('/img/personas-aforo.webp');">
+          <span>CONVIVIENDA</span>
+          <h2>Más de 10K de personas de aforo</h2>
+        </article>
+      </swiper-slide>
+    </swiper-container>
+    <ul class="important__list no-decoration">
+      <li>
+        <article class="important__list--items">
+          <span class="material-symbols-outlined">capture</span>
+          <div>
+            <h4>1500</h4>
+            <p>metros cuadrados</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="important__list--items">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <div>
+            <h4>+1000</h4>
+            <p>eventos realizados</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="important__list--items">
+          <span class="material-symbols-outlined">table_large</span>
+          <div>
+            <h4>18</h4>
+            <p>salas</p>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="important__list--items">
+          <span class="material-symbols-outlined">adaptive_audio_mic</span>
+          <div>
+            <h4>10 000</h4>
+            <p>personas de aforo</p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Parte nuevo carrusel -->
+
+    <section id="ofices2">
+    <h2 class="title">Próximos Eventos</h2>
+    <main class="ofices__content">
+      <button class="btn-slider prev2">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </button>
+      <button class="btn-slider next2">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+      <swiper-container id="ofices-swiper2" init="false" speed="500" loop="true" css-mode="true" space-between="12">
+        <swiper-slide>
+          <article class="ofices2__card">
+            <div class="ofices2__card--img" style="--ofice2-card-img: url('/img/fest_superhumans.webp');"></div>
+            <p class="title--card"> <strong>Fest_25 Súper Humans</strong></p>
+            <p class="title--fecha">15 y 16 de agosto</p>
+            <p class="title--info">Ven y descubre sabores únicos, historias detrás del queso y mucha pasión artesanal.</p>
+            <div>
+              <button>Ver más</button>
+            </div>
+          </article>
+        </swiper-slide>
+        <swiper-slide>
+          <article class="ofices2__card">
+            <div class="ofices2__card--img" style="--ofice2-card-img: url('/img/salonqueso.webp');"></div>
+            <p class="title--card">Sala <strong>Salón de Queso</strong></p>
+            <p class="title--fecha">15 y 16 de agosto</p>
+            <p class="title--info">Ven y descubre sabores únicos, historias detrás del queso y mucha pasión artesanal.</p>
+            <div>
+              <button>Ver más</button>
+            </div>
+          </article>
+        </swiper-slide>
+        <swiper-slide>
+          <article class="ofices2__card">
+            <div class="ofices2__card--img" style="--ofice2-card-img: url('/img/apecperu.webp');"></div>
+            <p class="title--card">Sala <strong>APEC Perú</strong></p>
+            <p class="title--fecha">15 y 16 de agosto</p>
+            <p class="title--info">Ven y descubre sabores únicos, historias detrás del queso y mucha pasión artesanal.</p>
+            <div>
+              <button>Ver más</button>
+            </div>
+          </article>
+        </swiper-slide>
+        <swiper-slide>
+          <article class="ofices2__card">
+            <div class="ofices2__card--img" style="--ofice2-card-img: url('/img/fest_superhumans.webp');"></div>
+            <p class="title--card">Sala <strong>Fest_26 Súper Humans</strong></p>
+            <p class="title--fecha">15 y 16 de agosto</p>
+            <p class="title--info">Ven y descubre sabores únicos, historias detrás del queso y mucha pasión artesanal.</p>            
+            <div>
+              <button>Ver más</button>
+            </div>
+          </article>
+        </swiper-slide>
+        <swiper-slide>
+          <article class="ofices2__card">
+            <div class="ofices2__card--img" style="--ofice2-card-img: url('/img/apecperu.webp');"></div>
+            <p class="title--card">Sala <strong>APEC Perú 2</strong></p>
+            <p class="title--fecha">15 y 16 de agosto</p>
+            <p class="title--info">Ven y descubre sabores únicos, historias detrás del queso y mucha pasión artesanal.</p>
+            <div>
+              <button>Ver más</button>
+            </div>
+          </article>
+        </swiper-slide>
+      </swiper-container>
+    </main>
+  </section>
+
+  <!-- Parte final de nuevo carrusel -->
+  
+  <section id="ofices">
+    <h2 class="title">Nuestras salas</h2>
+    <main class="ofices__content">
+      <button class="btn-slider prev">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </button>
+      <button class="btn-slider next">
+        <span class="material-symbols-outlined">chevron_right</span>
+      </button>
+      <swiper-container id="ofices-swiper" init="false" speed="500" loop="true" css-mode="true" space-between="12">
+        <swiper-slide>
+          <article class="ofices__card">
+            <div class="ofices__card--img" style="--ofice-card-img: url('/img/oficina-1.webp');"></div>
+            <p class="title--card">Sala <strong>San Borja 1</strong></p>
+            <p class="title--info--ofice">Área: 833 m²</p>
+
+            <div>
+              <button>Ver disponibilidad</button>
+              <button class="btn-cotizar">Cotizar</button>
+            </div>
+          </article>
+        </swiper-slide>
+        <swiper-slide>
+          <article class="ofices__card">
+            <div class="ofices__card--img" style="--ofice-card-img: url('/img/oficina-2.webp');"></div>
+            <p class="title--card">Sala <strong>Lima 1</strong></p>
+            <p class="title--info--ofice">Área: 751 m²</p>
+            <div>
+              <button>Ver disponibilidad</button>
+              <button class="btn-cotizar">Cotizar</button>
+            </div>
+          </article>
+        </swiper-slide>
+        <swiper-slide>
+          <article class="ofices__card">
+            <div class="ofices__card--img" style="--ofice-card-img: url('/img/oficina-3.webp');"></div>
+            <p class="title--card">Sala <strong>Puruchuco</strong></p>
+            <p class="title--info--ofice">Área: 624 m²</p>
+            <div>
+              <button>Ver disponibilidad</button>
+              <button class="btn-cotizar">Cotizar</button>
+            </div>
+          </article>
+        </swiper-slide>
+        <swiper-slide>
+          <article class="ofices__card">
+            <div class="ofices__card--img" style="--ofice-card-img: url('/img/oficina-4.webp');"></div>
+            <p class="title--card">Sala <strong>Puruchuco</strong></p>
+            <p class="title--info--ofice">Área: 622 m²</p>
+            <div>
+              <button>Ver disponibilidad</button>
+              <button class="btn-cotizar">Cotizar</button>
+            </div>
+          </article>
+        </swiper-slide>
+        <swiper-slide>
+          <article class="ofices__card">
+            <div class="ofices__card--img" style="--ofice-card-img: url('/img/oficina-5.webp');"></div>
+            <p class="title--card">Sala <strong>Puruchuco</strong></p>
+            <p class="title--info--ofice">Área: 623 m²</p>
+            <div>
+              <button>Ver disponibilidad</button>
+              <button class="btn-cotizar">Cotizar</button>
+            </div>
+          </article>
+        </swiper-slide>
+      </swiper-container>
+    </main>
+  </section>
+  
+  <section id="where">
+    <h2>¿Cómo llegar?</h2>
+    <main>
+      <article>
+        <p>Paradas más cercanas:</p>
+        <ul style="list-style: disc; padding-left: 1rem;">
+          <li>
+            <p>Avenida San Luis, 1849 está a 435 m de distancia, 7 minutos caminando.</p>
+          </li>
+          <li>
+            <p>Estación La Cultura está a 581 m de distancia, 9 minutos caminando.</p>
+          </li>
+          <li>
+            <p>Javier Prado Este está a 587 m de distancia, 9 minutos caminando.</p>
+          </li>
+          <li>
+            <p>Canadá está a 721 m de distancia, 11 minutos caminando.</p>
+          </li>
+          <li>
+            <p>Avenida San Luis,1126 está a 731 m de distancia, 11 minutos caminando.</p>
+          </li>
+        </ul>
+        <p><strong>Líneas de autobús:</strong> <u>1404</u>, <u>2702</u>, <u>6901</u>, <u>8104</u>,<u>1057B</u> y <u>OM62</u></p>
+        <p></p>
+        <p><strong>Líneas de metro:</strong> <u>L1B</u> y <u>L1V </u></p>
+        <div class="tripavasor" style="background-image: url('img/tripavasor.png');">
+
+        </div>
+      </article>
+      <div class="map" style="background-image: url('img/location2.png');">
+      </div>
+    </main>
+  </section>
+  
+  <footer>
+    <div class="footer__content">
+      <div class="logo">
+        <img src="/img/logo-vivienda.png" alt="logo" loading="lazy">
+        <div>
+          <strong>LIMA</strong><br>
+          <span>CENTRO DE<br>CONVENCIONES</span>
+        </div>
+      </div>
+      <article>
+        <div>
+          <strong>Copyright © 2019 - LIMA <br> CENTRO DE CONVENCIONES</strong>
+          <p>Ministerio de Vivienda,<br> Construcción y Saneamiento</p>
+        </div>
+        <p><strong>T:</strong> +(51) 399 3600</p>
+        <p><strong>D:</strong> Av. de la Arqueología N°172<br> San Borja - Lima</p>
+      </article>
+      <ul class="no-decoration">
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>
+          </span>
+        </li>
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>
+          </span>
+        </li>
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+          </span>
+        </li>
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+          </span>
+        </li>
+        <li>
+          <span class="social-media">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
+          </span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
