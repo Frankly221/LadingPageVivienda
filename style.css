@@ -54,7 +54,7 @@ body > section {
 }
 
 .title {
-  color: black;
+  color: rgb(110, 145, 160, 1);
   font-size: 2.5rem;
   margin-bottom: 26px;
   padding-right: 40px;
@@ -554,7 +554,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 46vw;
+  width: 32vw;
 }
 
 footer {
@@ -718,10 +718,12 @@ footer ul .social-media {
   }
     #where main .map{
     width: auto;
+    display: block;
+    margin-top: 80px;
 }
     #where main {
-      display: block;
       height: 900px;
+      display: block;
 }
   #where main article{
     margin-bottom: 50px;
@@ -844,4 +846,32 @@ footer ul .social-media {
 .ofices__card .title--info--ofice {
   font-size: 17px;
   padding-bottom: 10px;
+}
+
+
+
+.message {
+  position: fixed;       /* Fijo en pantalla */
+  bottom: 30px;          /* Separado 20px desde abajo */
+  right: 50px;           /* Separado 20px desde la derecha */
+  z-index: 1000;         /* Para que quede por encima de otros elementos */
+  
+  /* Opcional: darle estilo */
+  background: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.message button {
+  background: none; /* color de ejemplo */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.message img{
+  max-width: 50px;
+  height: 50px;
 }

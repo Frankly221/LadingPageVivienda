@@ -160,12 +160,12 @@ button {
 
 #hero {
   margin-top: calc(var(--height-header) - 24px);
-  background-image: url('/img/nosotros/sobrenosotros.jpg');
+  background-image: url('/img/ubicacion.jpg');
   background-size: cover;
   background-position: center;
   padding: 24px 48px;
   height: 10dvh;
-  min-height: 300px;
+  min-height: 400px;
   max-height: 1000px;
   display: flex;
   flex-direction: column;
@@ -199,8 +199,8 @@ button {
 }
 
 .hero__header .logo strong {
-  font-size: 32px;
-  line-height: 30px;
+  font-size: 48px;
+  line-height: 350px;
 }
 
 .hero__header .logo span {
@@ -211,34 +211,7 @@ button {
 /* --------------------------------------------------------------------- Foto LCC --------------------------------------------------*/
 /* --------------------------------------------------------------------- Como Llegar --------------------------------------------------*/
 
-#where {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 48px 60px;
-}
 
-#where h2 {
-  text-align: center;
-  margin-bottom: 24px;
-}
-
-#where main {
-  max-width: var(--max-width-global);
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 24px;
-}
-
-#where main article ul {
-  margin-bottom: 12px;
-}
-
-#where main .map {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* --------------------------------------------------------------------- Como Llegar --------------------------------------------------*/
 /* --------------------------------------------------------------------- footer --------------------------------------------------*/
@@ -300,104 +273,79 @@ footer ul .social-media {
 /* --------------------------------------------------------------------- LCC --------------------------------------------------*/
 
 
-#why {
-  padding: 48px 60px;
-  padding-right: 0;
-  text-align: center;
-  max-width: 100vw;
-  margin-inline: auto;
-}
-
-#why p {
-  margin-top: 50px;
-}
-
-.title {
-  color: black;
-  font-size: 2.5rem;
-  margin-bottom: 26px;
-  padding-right: 40px;
-
-}
-
-.location-description__text{
-  font-size: 1.8vw;
-  margin-bottom: 80px;
-  text-align: start;
-}
-
-.location-description{
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-.contenedor-ubicacion-img{
-  height: 1vh;
-  
-}
-
-.ubicacion-img{
-    width: 44vw;
-    height: 24vw;
-    border-radius: 230px 0 0 230px;
-}
 
 
 /* --------------------------------------------------------------------- LCC 2 --------------------------------------------------*/
 
 
-#why2 {
-  padding: 48px ;
-  padding-left: 0;
-  text-align: center;
-  max-width: 100vw;
-  margin-inline: auto;
-}
 
 
-#why2 .title {
-  color: black;
-  font-size: 2.5rem;
-  margin-bottom: 26px;
-  padding-left: 40px;
-
-}
-
-#why2 .location-description__text2{
-  font-size: 1.4vw;
-  text-align: start;
-}
-
-#why2 .location-description2{
+.container-nosotros{
   display: flex;
-  justify-content: space-between;
+  position: relative;
+  width: 100%;                 /* ← mejor que 100vw para evitar overflow por la barra de scroll */
+  gap: clamp(16px, 4vw, 32px); /* separación fluida entre columnas */
+  padding-block: clamp(40px, 10vh, 120px); /* ← distancia superior/inferior que se mantiene proporcional */
+  justify-content: space-evenly;
+  background-color: red;
+  align-items: flex-start;
+  flex-wrap: wrap;             /* ← permite que bajen a dos filas si no entra */
+  box-sizing: border-box;
+  height: 1000px;
+}
+
+.padre-container-first,
+.padre-container-second {
+  flex: 1 1 320px;   /* crece, encoge y tiene un ancho base mínimo */
+  max-width: 600px;  /* evita que se vuelvan gigantes en pantallas enormes */
+}
+
+.padre-container-first {
+  width: 30%;
+  height: 100px;
+}
+
+.padre-container-second {
+  width: 30%;
+  height: 100px;
+}
+.hijo-container-first{
+  width: min(500px, 100%);     /* nunca más grande que 500px, pero se adapta al contenedor */
+  aspect-ratio: 1 / 1;         /* mantiene proporción cuadrada; quita height fija */
+  background-size: cover;
+  background-position: center;
+  /* opcional: añade sombra si quieres */
+  /* box-shadow: 0 10px 20px rgba(0,0,0,.15); */
 }
 
 
-
-#why2 .contenedor-ubicacion-img{
-  height: 1vh;
-  
+.atras{
+  background: crimson;
+  top: 20px;
+  left: 20px;
+  z-index: 1; /* Aparece debajo */
 }
 
-#why2 .ubicacion-img{
-    width: 44vw;
-    height: 24vw;
-    border-radius: 0 230px 230px 0;
+
+/* ✅ Mejora legibilidad en móviles: apila y centra */
+@media (max-width: 768px){
+  .container-nosotros{
+    flex-direction: column;  /* mejor en column si quieres que bajen en stack */
+    align-items: stretch; 
+    display: block;   /* que ocupen todo el ancho */
+    justify-content: flex-start;
+    gap: 0;     
+    width: 100%;             /* 🚀 elimina el espacio entre hijos */
+  }
+  .padre-container-first,
+  .padre-container-second{
+    min-width: 100%;
+  }
+  .padre-container-second{
+    height: 250px;
+  }
+  .hijo-container-first{
+    width: 100%;
+    height: 300px;
+  }
 }
-
-#why2 .description__text__2{
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; 
-  gap: 16px;
-  margin-right: 120px;    
-}
-
-/* --------------------------------------------------------------------- LCC 2 --------------------------------------------------*/
-
-
-
