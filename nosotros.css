@@ -287,11 +287,10 @@ footer ul .social-media {
   gap: clamp(16px, 4vw, 32px); /* separación fluida entre columnas */
   padding-block: clamp(40px, 10vh, 120px); /* ← distancia superior/inferior que se mantiene proporcional */
   justify-content: space-evenly;
-  background-color: red;
   align-items: flex-start;
   flex-wrap: wrap;             /* ← permite que bajen a dos filas si no entra */
   box-sizing: border-box;
-  height: 1000px;
+  height: 650px;
 }
 
 .padre-container-first,
@@ -327,6 +326,79 @@ footer ul .social-media {
 }
 
 
+
+
+
+.second-img{
+  width: 100%;
+}
+.second-img img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  
+}
+
+.historia{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  gap: 30px;
+
+}
+
+
+.historia h5{
+  color: var(--primary-color);
+  font-size: 35px;
+}
+
+.historia p{
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 800px; /* Limita el ancho del texto para mejor legibilidad */
+}
+
+
+.mision-vision {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 12px;
+  margin: 40px 0;
+   
+
+}
+
+.mision-vision div{
+  width: 550px;
+  height: 550px;
+  border-radius: 32px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: rgba(242,242,242,242.1);
+}
+
+.mision-vision h5{
+  color: black;
+  font-size: 35px;
+
+}
+
+.mision-vision p{
+  color: black;
+  font-size: 21px;
+
+}
+
+
+
 /* ✅ Mejora legibilidad en móviles: apila y centra */
 @media (max-width: 768px){
   .container-nosotros{
@@ -349,3 +421,6 @@ footer ul .social-media {
     height: 300px;
   }
 }
+
+
+
