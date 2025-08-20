@@ -712,22 +712,21 @@ footer ul .social-media {
     justify-content: space-around;
   }
   .map{
-    margin-top: 200px;
     width: auto;
     height: 200px;
   }
     #where main .map{
     width: auto;
+    height: 200px;
     display: block;
-    margin-top: 80px;
 }
     #where main {
-      height: 900px;
+      height: auto;
       display: block;
 }
   #where main article{
     margin-bottom: 50px;
-    height: 500px;
+    height: auto;
 }
 }
 
