@@ -612,9 +612,62 @@ footer ul .social-media {
     grid-column: 1/3;
     justify-content: space-around;
   }
-}
+
 /* --------------------------------------------------------------------- Ambientes --------------------------------------------------*/
 
+.porque-items{
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+
+.vista{
+  display: none;
+}
+
+.sala{
+  display: block;
+  height: auto;
+    padding: 12px;
+}
+
+.sala2{
+  display: block;
+  height: auto;
+    padding: 12px;
+}
+
+.sala img{
+  width: 100%;
+  height: auto;
+}
+.sala2 img{
+  width: 100%;
+  height: auto;
+}
+
+
+}
+
+.sala ul{
+  font-size: 18px;
+  padding-left: 0px;
+}
+
+.sala2 ul{
+  font-size: 18px;
+  padding-left: 0px;
+}
+.sala li{
+  list-style: none;
+  font-size: 18px;
+}
+
+.sala2 li{
+  list-style: none;
+  font-size: 18px;
+}
 
 
 
