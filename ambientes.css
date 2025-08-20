@@ -702,4 +702,57 @@ footer ul .social-media {
 }
 
 
+/*     /* Contenedor del dropdown */
+    .aforo {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Botón principal */
+    .dropbtn {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 160px;
+    }
+
+    .dropbtn:after {
+      content: "↓"; /* flechita */
+      font-size: 12px;
+      margin-left: 8px;
+    }
+
+    /* Contenido del dropdown */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+      border-radius: 6px;
+      z-index: 1;
+      margin-top: 5px;
+      overflow: hidden;
+    }
+
+    /* Opciones */
+    .dropdown-content div {
+      padding: 10px 16px;
+      cursor: pointer;
+    }
+
+    .dropdown-content div:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Mostrar cuando está activo */
+    .show {
+      display: block;
+    }
 
