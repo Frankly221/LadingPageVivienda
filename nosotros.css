@@ -411,7 +411,8 @@ footer ul .social-media {
   padding: 30px;
   box-sizing: border-box;
   background-color: rgba(242,242,242,242.1);
-  flex-wrap: wrap;  
+  flex-wrap: wrap; 
+  text-align: center;
 }
 
 .mision-vision h5{
@@ -457,9 +458,11 @@ footer ul .social-media {
     visibility: visible;
   }
 
+  #hero{
+    align-items: center;
+    justify-content: center;
+  }
   #hero .hero__header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 24px;
   }
 
@@ -472,7 +475,7 @@ footer ul .social-media {
   }
 
   #hero .hero__header .logo strong {
-    font-size: 24px;
+    font-size: 45px;
     line-height: 20px;
   }
 
@@ -503,7 +506,15 @@ footer ul .social-media {
 
 
 
+.mision-vision h5{
+  display: flex;
+  justify-content: center;
+}
 
+.mision-vision p{
+  display: flex;
+  justify-content: space-around;
+}
 
 
 
