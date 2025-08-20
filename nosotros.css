@@ -24,7 +24,7 @@
   box-sizing: border-box;
   scrollbar-width: thin;          /* Para Firefox */
   scrollbar-color: var(--primary-color) #f1f1f1; /* Para Firefox */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Nunito", sans-serif;
 }
 
 /* Estilos de la barra de scroll para navegadores WebKit (Chrome, Safari) */
@@ -307,6 +307,7 @@ footer ul .social-media {
 .padre-container-second p{
   font-size: clamp(16px, 2vw, 24px);
   padding: 6px 10px;
+  font-family: "Nunito", sans-serif;
 }
 
 
@@ -383,6 +384,7 @@ footer ul .social-media {
 .historia h5{
   color: var(--primary-color);
   font-size: 35px;
+  font-family: "Nunito", sans-serif;
 }
 
 .historia p{
@@ -390,6 +392,7 @@ footer ul .social-media {
   line-height: 1.5;
   text-align: center;
   max-width: 800px; /* Limita el ancho del texto para mejor legibilidad */
+  font-family: "Nunito", sans-serif;
 }
 
 
@@ -422,12 +425,14 @@ footer ul .social-media {
 .mision-vision h5{
   color: black;
   font-size: 35px;
+  font-family: "Nunito", sans-serif;
 
 }
 
 .mision-vision p{
   color: black;
   font-size: clamp(14px, 2vw, 24px);
+  font-family: "Nunito", sans-serif;
 
 }
 

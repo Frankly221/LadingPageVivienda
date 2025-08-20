@@ -24,7 +24,7 @@
   box-sizing: border-box;
   scrollbar-width: thin;          /* Para Firefox */
   scrollbar-color: var(--primary-color) #f1f1f1; /* Para Firefox */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Nunito", sans-serif;
 }
 
 /* Estilos de la barra de scroll para navegadores WebKit (Chrome, Safari) */
@@ -46,7 +46,7 @@ body {
   color: var(--text-color);
   min-height: 100vh; /* Fallback para navegadores que no soportan dvh */
   min-height: 100dvh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body > section {
@@ -160,12 +160,12 @@ button {
 
 #hero {
   margin-top: calc(var(--height-header) - 24px);
-  background-image: url('/img/nosotros/sobrenosotros.jpg');
+  background-image: url('/img/Ambientes/ambienteshero.jpg');
   background-size: cover;
   background-position: center;
   padding: 24px 48px;
   height: 10dvh;
-  min-height: 300px;
+  min-height: 400px;
   max-height: 1000px;
   display: flex;
   flex-direction: column;
@@ -199,8 +199,8 @@ button {
 }
 
 .hero__header .logo strong {
-  font-size: 32px;
-  line-height: 30px;
+  font-size: 48px;
+  line-height: 350px;
 }
 
 .hero__header .logo span {
@@ -208,39 +208,16 @@ button {
   line-height: 16px;
 }
 
-/* --------------------------------------------------------------------- Foto LCC --------------------------------------------------*/
-/* --------------------------------------------------------------------- Como Llegar --------------------------------------------------*/
-
-#where {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 48px 60px;
+.important__list--items {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
 }
 
-#where h2 {
-  text-align: center;
-  margin-bottom: 24px;
+.important__list--items .material-symbols-outlined {
+  font-size: 32px;
 }
 
-#where main {
-  max-width: var(--max-width-global);
-  margin-inline: auto;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 24px;
-}
-
-#where main article ul {
-  margin-bottom: 12px;
-}
-
-#where main .map {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* --------------------------------------------------------------------- Como Llegar --------------------------------------------------*/
 /* --------------------------------------------------------------------- footer --------------------------------------------------*/
 footer {
   background-color: var(--footer-color);
@@ -295,109 +272,381 @@ footer ul .social-media {
   display: grid;
   place-items: center;
 }
-/* --------------------------------------------------------------------- footer --------------------------------------------------*/
 
-/* --------------------------------------------------------------------- LCC --------------------------------------------------*/
+/* --------------------------------------------------------------------- Ambientes --------------------------------------------------*/
 
-
-#why {
-  padding: 48px 60px;
-  padding-right: 0;
-  text-align: center;
-  max-width: 100vw;
-  margin-inline: auto;
-}
-
-#why p {
-  margin-top: 50px;
-}
-
-.title {
-  color: black;
-  font-size: 2.5rem;
-  margin-bottom: 26px;
-  padding-right: 40px;
-
-}
-
-.location-description__text{
-  font-size: 1.8vw;
-  margin-bottom: 80px;
-  text-align: start;
-}
-
-.location-description{
+.ambientes-descripcion{
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: space-between;
-}
-
-
-
-.contenedor-ubicacion-img{
-  height: 1vh;
-  
-}
-
-.ubicacion-img{
-    width: 44vw;
-    height: 24vw;
-    border-radius: 230px 0 0 230px;
-}
-
-
-/* --------------------------------------------------------------------- LCC 2 --------------------------------------------------*/
-
-
-#why2 {
-  padding: 48px ;
-  padding-left: 0;
-  text-align: center;
-  max-width: 100vw;
-  margin-inline: auto;
-}
-
-
-#why2 .title {
-  color: black;
-  font-size: 2.5rem;
-  margin-bottom: 26px;
-  padding-left: 40px;
-
-}
-
-#why2 .location-description__text2{
-  font-size: 1.4vw;
-  text-align: start;
-}
-
-#why2 .location-description2{
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-#why2 .contenedor-ubicacion-img{
-  height: 1vh;
-  
-}
-
-#why2 .ubicacion-img{
-    width: 44vw;
-    height: 24vw;
-    border-radius: 0 230px 230px 0;
-}
-
-#why2 .description__text__2{
-  display: flex; 
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start; 
-  gap: 16px;
-  margin-right: 120px;    
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  margin: 40px 0;
 }
 
-/* --------------------------------------------------------------------- LCC 2 --------------------------------------------------*/
+.ambientes-descripcion p{
+  font-size: clamp(16px, 2vw, 24px);
+}
+
+.porque{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  margin: 40px 0;
+}
+
+.porque h5{
+  font-size: 40px;
+  color: rgb(110, 145, 160, 1);
+}
+
+
+
+.porque-items{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  margin: 40px 0;
+}
+
+.porque-items h5{
+  font-size: 40px;
+  color: rgb(68, 66, 66, 1);
+}
+
+.porque-items p{
+  font-size: clamp(14px, 2vw, 24px);
+  color: rgb(68, 66, 66, 1);
+}
+
+.padre-opciones{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  margin: 40px 0;
+
+  }
+
+.busqueda{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vista{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: rgb(242, 242, 242, 1);
+  font-size: 24px;
+  height: 45px;
+  width: clamp(100px, 50%, 230px);
+  border-radius: 20px;
+}
+
+.lista{
+  background-color: white;
+  border-radius: 20px;
+  width: clamp(60px, 50%, 90px);
+}
+
+.aforo-busqueda{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aforo-busqueda button{
+  border-radius: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  width: 130px;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.aforo button{
+ border: 1px solid #ccc;
+ background: none;
+}
+
+.busqueda button{
+ border: none;
+ background: rgb(110, 145, 160, 1);
+ color: white;
+}
+
+
+
+
+.sala{
+  width: auto;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  margin: 40px 0;
+  gap: clamp(20px, 40px ,45px);
+}
+
+.sala img{
+  width: clamp(100px, 50vw + 0.5rem ,600px)  ;
+  height: auto;
+}
+
+.sala h2{
+  font-size: clamp(24px, 5vw, 32px);
+  color: rgb(110, 145, 160, 1);
+  text-align: start;
+}
+
+.sala ul{
+  text-align: start;
+  font-size: 24px;
+  padding: 0px 30px;
+}
+
+.disponibilidad-cotizar{
+  align-items: start;
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+.btn-cotizar{
+  background-color: rgb(68, 66, 66, 1);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.btn-disponibilidad{
+  background-color: white;
+  color: rgb(68, 66, 66, 1);
+  border: 1px solid rgb(110, 145, 160, 1);
+  padding: 12px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+/* -----------------------------------------sala 2------------------------------- */
+.sala2{
+  
+  background-color: rgb(242, 242, 242, 1);
+  width: auto;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+  margin: 40px 0;
+  gap: clamp(20px, 40px ,45px);
+}
+
+.sala2 img{
+  width: clamp(100px, 50vw + 0.5rem ,600px)  ;
+  height: auto;
+}
+
+.sala2 h2{
+  font-size: clamp(24px, 5vw, 32px);
+  color: rgb(110, 145, 160, 1);
+  text-align: start;
+}
+
+.sala2 ul{
+  text-align: start;
+  font-size: 24px;
+  padding: 0px 30px;
+}
+
+.disponibilidad-cotizar{
+  align-items: start;
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+.btn-cotizar{
+  background-color: rgb(68, 66, 66, 1);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.btn-disponibilidad{
+  background-color: white;
+  color: rgb(68, 66, 66, 1);
+  border: 1px solid rgb(110, 145, 160, 1);
+  padding: 12px 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+/* -----------------------------------------sala 2------------------------------- */
+
+
+
+
+
+/* ✅ Mejora legibilidad en móviles: apila y centra */
+@media (max-width: 768px){
+  .header__menu-btn {
+    display: flex;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* width: 300px; */
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 2rem;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    z-index: 999;
+  }
+
+  .header.active .header__nav {
+    right: 0;
+  }
+
+  .header.active .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #hero{
+    align-items: center;
+    justify-content: center;
+  }
+  #hero .hero__header {
+    gap: 24px;
+  }
+
+  #hero .hero__header select {
+    width: fit-content;
+  }
+
+  #hero .hero__header .logo img {
+    height: 40px;
+  }
+
+  #hero .hero__header .logo strong {
+    font-size: 45px;
+    line-height: 20px;
+  }
+
+  #hero .hero__header .logo span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  #hero .hero__header .tel {
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  #important .important__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #where main {
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto 200px;
+    height: 2000px;
+  }
+
+  
+  footer .footer__content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  footer .footer__content .logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .footer__content .logo img {
+    height: 40px;
+  }
+
+  footer .footer__content .logo strong {
+    font-size: 32px;
+    line-height: 30px;
+  }
+
+  footer .footer__content .logo span {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  footer .footer__content ul {
+    grid-column: 1/3;
+    justify-content: space-around;
+  }
+}
+/* --------------------------------------------------------------------- Ambientes --------------------------------------------------*/
+
+
+
+
+  
+
+
+
+.message {
+  position: fixed;       /* Fijo en pantalla */
+  bottom: 30px;          /* Separado 20px desde abajo */
+  right: 50px;           /* Separado 20px desde la derecha */
+  z-index: 1000;         /* Para que quede por encima de otros elementos */
+  
+  /* Opcional: darle estilo */
+  background: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.message button {
+  background: none; /* color de ejemplo */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.message img{
+  max-width: 50px;
+  height: 50px;
+}
 
 
 
