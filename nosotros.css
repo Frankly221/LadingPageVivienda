@@ -298,10 +298,10 @@ footer ul .social-media {
   gap: clamp(12px, 4vw, 32px); /* separación fluida entre columnas */
   padding-block: clamp(50px, 10vh, 120px); /* ← distancia superior/inferior que se mantiene proporcional */
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;             /* ← permite que bajen a dos filas si no entra */
   box-sizing: border-box;
-  height: 750px;
+  height: 650px;
   padding: 24px 24px;
 }
 .padre-container-second p{
@@ -320,11 +320,15 @@ footer ul .social-media {
   position: relative; /* Necesario para posicionamiento absoluto de los hijos */
   width: 30%;
   height: 400px; /* Altura fija para contener los elementos posicionados */
+  margin-bottom: auto;
+  margin-top: 60px;
 }
 
 .padre-container-second {
   width: 30%;
   height: 150px;
+  margin-bottom: auto;
+  margin-top: 60px;
 }
 .hijo-container-first{
   width: min(500px, 100%);
@@ -372,7 +376,7 @@ footer ul .social-media {
   width: auto;
   align-items: center;
   gap: 30px;
-
+  padding: 30px;
 }
 
 
@@ -423,7 +427,7 @@ footer ul .social-media {
 
 .mision-vision p{
   color: black;
-  font-size: clamp(16px, 2vw, 24px);
+  font-size: clamp(14px, 2vw, 24px);
 
 }
 
@@ -502,9 +506,41 @@ footer ul .social-media {
     height: 2000px;
   }
 
+  
+  footer .footer__content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  footer .footer__content .logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer .footer__content .logo img {
+    height: 40px;
+  }
+
+  footer .footer__content .logo strong {
+    font-size: 32px;
+    line-height: 30px;
+  }
+
+  footer .footer__content .logo span {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  footer .footer__content ul {
+    grid-column: 1/3;
+    justify-content: space-around;
+  }
 
 
 
+.historia{
+  gap: 10px;
+}
 
 .mision-vision h5{
   display: flex;
@@ -527,14 +563,13 @@ footer ul .social-media {
     justify-content: flex-start;
     gap: 0;     
     width: 100%;
-    height: 420px;             /* 🚀 elimina el espacio entre hijos */
+    height: clamp(520px, 50vh, 600px);             /* 🚀 elimina el espacio entre hijos */
   }
-  .padre-container-first,
   .padre-container-second{
     min-width: 100%;
   }
   .padre-container-second{
-    height: 350px; /* Altura ajustada para móviles */
+    height: auto; /* Altura ajustada para móviles */
   }
   .hijo-container-first{
      width: 90%;
@@ -555,13 +590,15 @@ footer ul .social-media {
     .mision-vision div{
     display: block;
     flex: 1 1 320px;   /* crece, encoge y tiene un ancho base mínimo */
-  max-width: 400px;  /* evita que se vuelvan gigantes en pantallas enormes */
-  height: 400px;
+  max-width: clamp(320px, 70vw, 400px);  /* evita que se vuelvan gigantes en pantallas enormes */
+  height: auto;
   margin:  20px 0 ;
   }
 
 
-
+.second-img img{
+  height: 300px;
+}
 
 
 
