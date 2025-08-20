@@ -208,7 +208,18 @@ button {
   line-height: 16px;
 }
 
+.important__list--items {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.important__list--items .material-symbols-outlined {
+  font-size: 32px;
+}
+
 /* --------------------------------------------------------------------- Foto LCC --------------------------------------------------*/
+
 /* --------------------------------------------------------------------- Como Llegar --------------------------------------------------*/
 
 
@@ -291,11 +302,13 @@ footer ul .social-media {
   flex-wrap: wrap;             /* ← permite que bajen a dos filas si no entra */
   box-sizing: border-box;
   height: 750px;
+  padding: 24px 24px;
 }
 .padre-container-second p{
   font-size: clamp(16px, 2vw, 24px);
   padding: 6px 10px;
 }
+
 
 .padre-container-first,
 .padre-container-second {
@@ -304,8 +317,9 @@ footer ul .social-media {
 }
 
 .padre-container-first {
+  position: relative; /* Necesario para posicionamiento absoluto de los hijos */
   width: 30%;
-  height: 100px;
+  height: 400px; /* Altura fija para contener los elementos posicionados */
 }
 
 .padre-container-second {
@@ -313,20 +327,29 @@ footer ul .social-media {
   height: 150px;
 }
 .hijo-container-first{
-  width: min(500px, 100%);     /* nunca más grande que 500px, pero se adapta al contenedor */
-  aspect-ratio: 1 / 1;         /* mantiene proporción cuadrada; quita height fija */
+  width: min(500px, 100%);
+  aspect-ratio: 1 / 1;
   background-size: cover;
   background-position: center;
-  /* opcional: añade sombra si quieres */
-  /* box-shadow: 0 10px 20px rgba(0,0,0,.15); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2; /* Aparece adelante */
+  /* border-radius: 8px; Opcional: bordes redondeados */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* Sombra para mayor profundidad */
 }
 
 
 .atras{
-  background: crimson;
+  width: min(500px, 100%);
+  aspect-ratio: 1 / 1;
+  background: var(--primary-color); /* Usa el color primario en lugar de crimson */
+  position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 1; /* Aparece debajo */
+  z-index: 1; /* Aparece atrás */
+  /* border-radius: 8px; Opcional: bordes redondeados */
+  opacity: 0.8; /* Transparencia para mejor efecto */
 }
 
 
@@ -434,6 +457,48 @@ footer ul .social-media {
     visibility: visible;
   }
 
+  #hero .hero__header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  #hero .hero__header select {
+    width: fit-content;
+  }
+
+  #hero .hero__header .logo img {
+    height: 40px;
+  }
+
+  #hero .hero__header .logo strong {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  #hero .hero__header .logo span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  #hero .hero__header .tel {
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  #important .important__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #where main {
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto 200px;
+    height: 2000px;
+  }
+
 
 
 
@@ -451,22 +516,25 @@ footer ul .social-media {
     justify-content: flex-start;
     gap: 0;     
     width: 100%;
-    height: 470px;             /* 🚀 elimina el espacio entre hijos */
+    height: 420px;             /* 🚀 elimina el espacio entre hijos */
   }
   .padre-container-first,
   .padre-container-second{
     min-width: 100%;
   }
   .padre-container-second{
-    height: 250px;
+    height: 350px; /* Altura ajustada para móviles */
   }
   .hijo-container-first{
-    width: 100%;
-    height: 300px;
+     width: 90%;
+    height: 250px;
   }
   .hijo-container-first{
     display: none;
     
+  }
+    .atras {
+    display: none; /* Oculta el botón de atrás en móviles */
   }
   .mision-vision{
     flex-direction: column;
@@ -480,6 +548,38 @@ footer ul .social-media {
   height: 400px;
   margin:  20px 0 ;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 }
 
 
