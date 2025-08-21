@@ -799,9 +799,17 @@ footer ul .social-media {
 
 
 .ofices2__card {
-  display: grid;
-  grid-template-rows: 330px auto auto;
-  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-content: end;
+  height: 600px;
+  justify-content: space-between;
+}
+
+.nuevo-content{
+  margin-top: 20px;
+  height: 40%;
+  padding-bottom: 10px;
 }
 
 .ofices2__card--img {
