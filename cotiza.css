@@ -160,7 +160,7 @@ button {
 
 #hero {
   margin-top: calc(var(--height-header) - 24px);
-  background-image: url('/img/morado.webp');
+  background-image: url('/img/cotiza.jpg');
   background-size: cover;
   background-position: center;
   padding: 24px 48px;
@@ -273,69 +273,133 @@ footer ul .social-media {
   place-items: center;
 }
 
-/* --------------------------------------------------------------------- agenda --------------------------------------------------*/
+/* --------------------------------------------------------------------- cotiza --------------------------------------------------*/
 
-.div-padre{
-    display: flex;
-    gap: 12px;
-    align-items: stretch;
-    justify-content: center;
-    justify-items: center;
-    padding: 10px;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    margin-bottom: 120px;
+.cotiza-titulo{
+  text-align: center;
+  font-size: 32px;
+  color: rgba(110, 145, 160, 1);
+  margin-top: 40px;
 }
 
-.container{
-    width: 400px;
+.cotiza-form {
+    max-width: 70%;
+    margin: 48px auto;
+    padding: 24px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
 }
 
-.container-hijo{
-    gap: 12px;
+.form-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-    padding: 16px;
-    padding-left: 0;
+    gap: 8px;
+}
+
+.form-group-finally {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: clamp(auto, 50%, 458px);
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group-fecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: clamp(203px, 50%, 203px);
+}
+
+.form-group-fecha label {
+    font-weight: 600;
+}
+
+.cotiza-form input[type="text"],
+.cotiza-form input[type="email"],
+.cotiza-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.cotiza-form input[type="date"]{
+    width: 304px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+
+
+.cotiza-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+}
+
+.form-row  {
+    flex: 1;
+}
+
+.form-group1{
+  width: clamp(203px, 50%, 203px);
+}
+
+.form-group2{
+  width: clamp(223px, 50%, 334px);
+}
+
+.form-section-title {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.form-section-title h3 {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.form-section-title p {
+    font-size: 14px;
+    color: #666;
+}
+
+.form-submit {
+    margin-top: 24px;
+}
+
+.form-submit button {
+    background-color: var(--btn-secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 200px;
     
 }
 
-.container-hijo-1{
-    gap: 12px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 12px;
-
-}
-.div-padre img{
-    width: 100%;
-    height: 308px;
-    object-fit: cover;
-}
-.div-padre p{
-    font-size: 20px;
-}
-.div-padre h3{
-    font-size: 24px;
-}
-
-
-.container button{
-    width: clamp(126px, 100%, 139px);
-    font-size: 24px;
-    border-radius: 16px;
-    border: 1px;
-    height: 40px;
-}
-.fecha-p{
-    color: rgb(110,145,160);
-    font-size: 16px;
-
-}
 
 
 /* ✅ Mejora legibilidad en móviles: apila y centra */
@@ -441,11 +505,11 @@ footer ul .social-media {
     justify-content: space-around;
   }
 
-/* --------------------------------------------------------------------- Ambientes --------------------------------------------------*/
-
-
 
 }
+
+
+
 
 
 
