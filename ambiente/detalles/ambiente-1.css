@@ -126,6 +126,13 @@ button {
   font-weight: 500;
 }
 
+.header__link#color_estado{
+  color: var(--primary-color);
+}
+.header__link#color_estado:hover {
+  color: #4a7a84; /* Un tono más oscuro para el hover */
+}
+
 .header__menu-btn {
   display: none;
   align-items: center;
@@ -162,7 +169,7 @@ button {
 
 #hero {
   margin-top: calc(var(--height-header) - 24px);
-  background-image: url('/img/noticias/header.png');
+  background-image: url('/img/Ambientes/ambienteshero.jpg');
   background-size: cover;
   background-position: center;
   padding: 24px 48px;
