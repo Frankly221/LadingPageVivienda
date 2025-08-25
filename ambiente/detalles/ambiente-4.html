@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>-
+  <link rel="stylesheet" href="ambiente-1.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- img -->
+   <!-- <link rel="preload" as="image" href="/img/hero.webp" type="image/webp"/> -->
+   <link rel="preload" as="image" href="/img/lcc.webp" type="image/webp"/>
+   <link rel="preload" as="image" href="/img/logo-vivienda.png" type="image/png"/>
+   <link rel="preload" as="image" href="/img/logo-vivienda-oscuro.png" type="image/png"/>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="logo">
+        <img src="/img/logo-vivienda-oscuro.png" alt="logo" loading="lazy">
+        <div>
+          <strong>LIMA</strong><br>
+          <span>CENTRO DE<br>CONVENCIONES</span>
+        </div>
+      </div>
+      <button class="header__menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <nav class="header__nav">
+        <a href="/index.html" class="header__link">Inicio</a>
+        <a href="/nosotros/nosotros.html" class="header__link">Nosotros</a>
+        <a href="/ambiente/ambientes.html" class="header__link">Ambientes</a>
+        <a href="/calendario/calendario.html" class="header__link">Calendario</a>
+        <a href="/agenda/agenda.html" class="header__link">Agenda</a>
+        <a href="/cotiza/cotiza.html" class="header__link">Cotiza tu evento</a>
+        <a href="/noticia/noticia.html" class="header__link">Noticia</a>
+        <button class="btn-search">
+          <span class="material-symbols-outlined" style="font-weight: 600;">search</span>
+        </button>
+      </nav>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  
+  
+  <section id="hero">
+    <div class="hero__header">
+      <div class="logo">
+        <div>
+          <strong>Noticias</strong><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="padre">
+        <section>
+            <div class="hijo-1">
+                <h3>Disponibilidad</h3>
+                <a href="#">
+                    <button>Cotizar</button>
+                </a>
+            </div>
+            <div class="hijo-2">
+                <div class="calendario-1" ></div>
+            </div>
+            <div class="hijo-3">
+                <div class="disponibilidad"> 
+                    <div class="color"></div>
+                <p>No Disponible</p>
+                </div>
+                <p></p>
+            </div>
+            <div class="hijo-4">
+                <h2>Sala <strong>Lima 2</strong></h2>
+                <p></p>
+            </div>
+            <div class="hijo-5">
+                <div class="imagen-1">
+                    <img src="/img/Ambientes/4.webp" alt="">
+                </div>
+                <div class="imagen-2">
+                    <img src="/img/Ambientes/4.webp" alt="">
+                    <img src="/img/Ambientes/4.webp" alt="">
+                </div>
+            </div>
+        </section>
+
+    </div>
+  </section>
+  
+  
+    <section>
+    <div class="message" >
+      <button>
+        <img src="/img/chatbot.svg" alt="">
+      </button>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer__content">
+      <div class="logo">
+        <img src="/img/logo-vivienda.png" alt="logo" loading="lazy">
+        <div>
+          <strong>LIMA</strong><br>
+          <span>CENTRO DE<br>CONVENCIONES</span>
+        </div>
+      </div>
+      <article>
+        <div>
+          <strong>Copyright © 2019 - LIMA <br> CENTRO DE CONVENCIONES</strong>
+          <p>Ministerio de Vivienda,<br> Construcción y Saneamiento</p>
+        </div>
+        <p><strong>T:</strong> +(51) 399 3600</p>
+        <p><strong>D:</strong> Av. de la Arqueología 172 con calle Del Comercio<br> San Borja - Lima</p>
+      </article>
+      <ul class="no-decoration">
+        <li>
+            <img src="/img/socialmedia/facebook.svg" alt="Icono" width="32" height="32">
+        </li>
+                <li>
+            <img src="/img/socialmedia/x.svg" alt="Icono" width="32" height="32">
+        </li>
+                <li>
+            <img src="/img/socialmedia/tiktok.svg" alt="Icono" width="32" height="32">
+        </li>
+                <li>
+            <img src="/img/socialmedia/instagram.svg" alt="Icono" width="32" height="32">
+        </li>
+                <li>
+            <img src="/img/socialmedia/in.svg" alt="Icono" width="32" height="32">
+        </li>
+                <li>
+            <img src="/img/socialmedia/youtube.svg" alt="Icono" width="32" height="32">
+        </li>
+        
+      </ul>
+    </div>
+  </footer>
+  <script src="/ambiente/detalles/ambientedt.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/min/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/locale/es.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="/ambiente/detalles/calendario.js"></script>
+</body>
+</html>
