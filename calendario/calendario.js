@@ -17,34 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', toggleMenu);
   });
 
-  // ----------------------
-  // DROPDOWN AFORO
-  // ----------------------
-  const $dropdownBtn = $('#selected'); // el botón principal
-  const $dropdownMenu = $('#dropdownMenu'); // el menú con opciones
-  const $options = $$('#dropdownMenu div'); // todas las opciones
 
-  const toggleDropdown = () => {
-    $dropdownMenu.classList.toggle('show');
-  };
-
-  const selectOption = (value) => {
-    $dropdownBtn.innerText = value;
-    $dropdownMenu.classList.remove('show');
-  };
-
-  $dropdownBtn.addEventListener('click', toggleDropdown);
-
-  $options.forEach(option => {
-    option.addEventListener('click', () => selectOption(option.innerText));
-  });
-
-  // cerrar si clicas fuera
-  document.addEventListener('click', (e) => {
-    if (!$dropdownBtn.contains(e.target) && !$dropdownMenu.contains(e.target)) {
-      $dropdownMenu.classList.remove('show');
-    }
-  });
 
   const listaBtn = document.querySelector('.vista .lista');
   const tablaBtn = document.querySelector('.vista .tabla');
