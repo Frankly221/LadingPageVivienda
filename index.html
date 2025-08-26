@@ -348,14 +348,6 @@
       </a>
     </main>
   </section>
-    <section>
-    <div class="message" >
-      <button>
-        <img " src="/img/chatbot.svg" alt="">
-      </button>
-
-    </div>
-  </section>
   
   <footer>
     <div class="footer__content">
@@ -397,6 +389,23 @@
       </ul>
     </div>
   </footer>
+  <div class="message">
+    <button id="chatbot-btn">
+      <img src="/img/chatbot.svg" alt="Abrir chatbot">
+    </button>
+  </div>
+  <div id="chatbot-container" style="display: none;">
+     <button id="close-chatbot-btn">
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <iframe
+      id="chatbot-iframe"
+      src="https://devbotlcc.vivienda.gob.pe/"
+      width="400"
+      height="600"
+      style="border:none; border-radius:10px;">
+    </iframe>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -300,7 +300,7 @@ footer ul .social-media {
   padding-inline: clamp(16px, 5vw, 48px);
 }
 .calendario-1 .daterangepicker{
-  margin-inline: auto;                 /* centra el widget */
+  margin-inline: auto;             /* centra el widget */
 }
 
 /* Evitar empujes a la derecha */
@@ -596,7 +596,9 @@ footer ul .social-media {
     font-weight: bold;
     cursor: pointer;
 }
-.calendario-1 .daterangepicker{  transform-origin: top center; }
+.calendario-1 .daterangepicker{  
+  transform-origin: top center;  
+}
 
 
 
@@ -676,6 +678,7 @@ footer ul .social-media {
   text-align: center;
   padding: 0 20px;
   margin: 40px 0;
+  margin-top: 200px;
 
   }
 
@@ -1085,4 +1088,11 @@ footer ul .social-media {
 
 
 
+}
+
+
+
+.daterangepicker {
+  scale: 2.2;
+  margin-bottom: 90px;
 }

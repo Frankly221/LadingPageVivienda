@@ -323,6 +323,7 @@ footer ul .social-media {
   gap: 12px;
   align-items: stretch;
   justify-items: stretch;
+  margin-top: 200px;
 }
 
 /* Columna derecha fluida */
@@ -705,7 +706,10 @@ footer ul .social-media {
     font-weight: bold;
     cursor: pointer;
 }
-.calendario-1 .daterangepicker{  transform-origin: top center; }
+.calendario-1 .daterangepicker{  
+  transform-origin: top center;
+   margin-right: 50px;  
+ }
 
 /* Lightbox imagen */
 .hijo-5 img { cursor: zoom-in; }
@@ -756,4 +760,10 @@ footer ul .social-media {
 @media (max-width: 768px){
   .img-modal__close { top: 8px; right: 8px; }
 }
+
+.daterangepicker {
+  scale: 2.2;
+  margin-bottom: 90px;
+}
+
 

@@ -92,3 +92,19 @@ $btnNextofice.addEventListener('click', () => {
 $btnPrevofice.addEventListener('click', () => {
   $swiperofice.swiper.slidePrev();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const chatbotBtn = document.getElementById('chatbot-btn');
+  const chatbotContainer = document.getElementById('chatbot-container');
+  const closeChatbotBtn = document.getElementById('close-chatbot-btn');
+
+  if (chatbotBtn && chatbotContainer && closeChatbotBtn) {
+    chatbotBtn.addEventListener('click', () => {
+      chatbotContainer.style.display = 'block';
+    });
+
+    closeChatbotBtn.addEventListener('click', () => {
+      chatbotContainer.style.display = 'none';
+    });
+  }
+});
