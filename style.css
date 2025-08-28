@@ -530,8 +530,9 @@ button {
 }
 
 .ofices__card button:hover {
-  background-color: var(--btn-secondary-color);
-  color: #fff;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
 }
 
 .ofices__card button.btn-cotizar {
@@ -540,8 +541,9 @@ button {
 }
 
 .ofices__card button.btn-cotizar:hover {
-  background-color: transparent;
-  color: var(--btn-secondary-color);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
 }
 
 #where {
@@ -855,8 +857,9 @@ footer ul .social-media {
 }
 
 .ofices2__card button:hover {
-  background-color: var(--btn-secondary-color);
-  color: #fff;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
 }
 
 .ofices2__card button.btn-cotizar {
