@@ -683,7 +683,7 @@ footer ul .social-media {
   text-align: center;
   padding: 0 20px;
   margin: 40px 0;
-  margin-top: 200px;
+  margin-top: 80px;
 
   }
 
@@ -1131,7 +1131,7 @@ footer ul .social-media {
 @media (max-width: 1024px) and (min-width: 769px) {
   .daterangepicker {
     scale: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .padre-opciones{
     margin-top: 10px;

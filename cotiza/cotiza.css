@@ -48,6 +48,13 @@ body {
   min-height: 100dvh;
   font-family: "Nunito", sans-serif;
 }
+.wrapper {
+  max-width: 1920px;   /* no más ancho que Full HD */
+  margin: 0 auto;      /* centrado en pantallas grandes */
+  width: 100%;         /* escala hacia abajo en pantallas menores */
+  box-sizing: border-box;
+  padding-inline: 24px; /* respiro en los bordes */
+}
 
 body > section {
   position: relative;
