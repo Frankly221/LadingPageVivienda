@@ -296,6 +296,7 @@ button {
   color: #fff;
   padding: 4px 8px;
   border-radius: 4px;
+  font-size: 24px;
 }
 
 .hero__filter select:placeholder-shown,
@@ -313,6 +314,7 @@ button {
   border-radius: 4px;
   background-color: var(--primary-color);
   color: #fff;
+  font-size: 24px;
 }
 
 #why {
@@ -324,6 +326,7 @@ button {
 
 #why p {
   margin-top: 16px;
+  font-size: 24px;
 }
 
 #important {
@@ -390,13 +393,13 @@ button {
 
 .important__card span {
   position: relative;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 500;
   z-index: 20;
 }
 
 .important__card h2 {
-  font-size: 36px;
+  font-size: 48px;
   z-index: 20;
   position: relative;
 }
@@ -437,8 +440,12 @@ button {
 }
 
 .important__list--items h4 {
-  font-size: 24px;
+  font-size: 44px;
   text-wrap: nowrap;
+}
+
+.important__list--items p{
+  font-size: 22px;
 }
 
 #ofices {
@@ -748,6 +755,25 @@ footer ul .social-media {
     margin-bottom: 50px;
     height: auto;
 }
+.hero__filter select,
+.hero__filter input {
+  font-size: 20px;
+}
+.hero__filter .btn-filter{
+  font-size: 20px;
+}
+.important__list--items h4,p{
+  font-size: 24px;
+}
+.important__list--items p{
+  font-size: 16px;
+}
+.important__list--items img{
+  width: 50px;
+  height: 50px;
+
+}
+
 }
 
 
@@ -822,7 +848,7 @@ footer ul .social-media {
   display: flex;
   flex-direction: column;
   align-content: end;
-  height: 600px;
+  height: 680px;
   justify-content: space-between;
 }
 
@@ -890,5 +916,12 @@ footer ul .social-media {
   bottom: 20px;
   right: 20px;
   z-index: 10000;
+}
+
+
+@media (max-width:638px) {
+  .ofices2__card{
+    height: auto;
+  }
 }
 
