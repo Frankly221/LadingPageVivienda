@@ -932,5 +932,12 @@ footer ul .social-media {
   #ofices{
     padding-top: 0px;
   }
+
+  .hero__filter select, .hero__filter input{
+    font-size: 16px;
+  }
+  .hero__filter .btn-filter{
+    font-size: 16px;
+  }
 }
 
