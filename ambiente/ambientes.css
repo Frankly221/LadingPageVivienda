@@ -367,9 +367,18 @@ footer ul .social-media {
 }
 
 .lista{
-  background-color: white;
   border-radius: 20px;
   width: clamp(60px, 50%, 90px);
+}
+.tabla{
+  border-radius: 20px;
+  width: clamp(60px, 50%, 90px);
+}
+
+.vista:hover .lista:hover,
+.vista:hover .tabla:hover {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .aforo-busqueda{
@@ -452,9 +461,9 @@ footer ul .social-media {
 }
 
 .btn-cotizar:hover {
-    background-color: white;
-    color: rgb(68, 66, 66, 1);
-    border: 1px solid rgb(110, 145, 160, 1);
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
 }
 
 
@@ -467,7 +476,7 @@ footer ul .social-media {
   cursor: pointer;
 }
 .btn-disponibilidad:hover {
-  background-color: rgb(68, 66, 66, 1);
+  background-color: var(--primary-color);
   color: white;
 }
 /* -----------------------------------------sala 2------------------------------- */
@@ -770,6 +779,9 @@ footer ul .social-media {
   cursor: pointer;
   user-select: none;
 }
+
+
+
 
 /* Contenedor para agrupar las secciones de salas cuando se vea en tabla */
 .salas-container.grid-3 {

@@ -342,8 +342,9 @@ footer ul .social-media {
 }
 
 .container button:hover {
-    background-color: var(--btn-secondary-color);
+    background-color: var(--primary-color);
     color: #fff;
+    border: none;
 }
 
 
