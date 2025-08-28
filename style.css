@@ -939,5 +939,14 @@ footer ul .social-media {
   .hero__filter .btn-filter{
     font-size: 16px;
   }
+  #ofices .title{
+    padding-right: 0px;
+  }
+  #why .title{
+    padding-right: 0px;
+  }
+  .hero__filter{
+    justify-content: center;
+  }
 }
 
