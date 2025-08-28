@@ -395,6 +395,11 @@ footer ul .social-media {
  border: none;
  background: rgb(110, 145, 160, 1);
  color: white;
+ transition: background-color .3s ease;
+}
+
+.busqueda button:hover {
+    background-color: #3b5861;
 }
 
 
@@ -446,6 +451,13 @@ footer ul .social-media {
   width: 100px;
 }
 
+.btn-cotizar:hover {
+    background-color: white;
+    color: rgb(68, 66, 66, 1);
+    border: 1px solid rgb(110, 145, 160, 1);
+}
+
+
 .btn-disponibilidad{
   background-color: white;
   color: rgb(68, 66, 66, 1);
@@ -453,6 +465,10 @@ footer ul .social-media {
   padding: 12px 16px;
   border-radius: 16px;
   cursor: pointer;
+}
+.btn-disponibilidad:hover {
+  background-color: rgb(68, 66, 66, 1);
+  color: white;
 }
 /* -----------------------------------------sala 2------------------------------- */
 .sala2{
@@ -493,24 +509,9 @@ footer ul .social-media {
   gap: 12px;
   margin-top: 12px;
 }
-.btn-cotizar{
-  background-color: rgb(68, 66, 66, 1);
-  color: white;
-  border: none;
-  padding: 12px 16px;
-  border-radius: 16px;
-  cursor: pointer;
-  width: 100px;
-}
 
-.btn-disponibilidad{
-  background-color: white;
-  color: rgb(68, 66, 66, 1);
-  border: 1px solid rgb(110, 145, 160, 1);
-  padding: 12px 16px;
-  border-radius: 16px;
-  cursor: pointer;
-}
+
+
 /* -----------------------------------------sala 2------------------------------- */
 
 

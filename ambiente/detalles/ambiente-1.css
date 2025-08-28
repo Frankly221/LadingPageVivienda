@@ -351,7 +351,10 @@ footer ul .social-media {
     font-size: 28px;
     border: 1px;
     border-radius: 16px;
-
+}
+.hijo-1 button:hover{
+    background: var(--color-celeste);
+    color: white;
 }
 
 .hijo-3{

@@ -406,6 +406,11 @@ footer ul .social-media {
     
 }
 
+.form-submit button:hover{
+    background: #4a7a84;
+    color: white;
+}
+
 
 
 /* ✅ Mejora legibilidad en móviles: apila y centra */

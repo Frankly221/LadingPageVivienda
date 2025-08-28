@@ -336,6 +336,11 @@ footer ul .social-media {
   border: 1px solid black;
   border-radius:   16px;
 }
+
+.quinto button:hover{
+    background: #4a7a84;
+    color: white;
+}
 ul{
   padding-left: 50px;
 }

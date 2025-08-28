@@ -526,11 +526,22 @@ button {
   color: var(--btn-secondary-color);
   padding: 8px 12px;
   font-weight: 600;
+  transition: all .3s ease;
+}
+
+.ofices__card button:hover {
+  background-color: var(--btn-secondary-color);
+  color: #fff;
 }
 
 .ofices__card button.btn-cotizar {
   background-color: var(--btn-secondary-color);
   color: #fff;
+}
+
+.ofices__card button.btn-cotizar:hover {
+  background-color: transparent;
+  color: var(--btn-secondary-color);
 }
 
 #where {
@@ -840,6 +851,12 @@ footer ul .social-media {
   color: var(--btn-secondary-color);
   padding: 8px 12px;
   font-weight: 600;
+  transition: all .3s ease;
+}
+
+.ofices2__card button:hover {
+  background-color: var(--btn-secondary-color);
+  color: #fff;
 }
 
 .ofices2__card button.btn-cotizar {

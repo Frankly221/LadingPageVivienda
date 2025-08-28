@@ -334,9 +334,19 @@ footer ul .social-media {
     width: clamp(126px, 100%, 139px);
     font-size: 24px;
     border-radius: 16px;
-    border: 1px;
+    border: 1px solid var(--btn-secondary-color);
     height: 40px;
+    background-color: transparent;
+    color: var(--btn-secondary-color);
+    transition: all .3s ease;
 }
+
+.container button:hover {
+    background-color: var(--btn-secondary-color);
+    color: #fff;
+}
+
+
 .fecha-p{
     color: rgb(110,145,160);
     font-size: 16px;

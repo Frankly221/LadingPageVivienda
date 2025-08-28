@@ -352,6 +352,11 @@ footer ul .social-media {
 
 }
 
+.btn-cotizar:hover{
+    background: var(--color-celeste);
+    color: white;
+}
+
 .hijo-3{
   display: flex;
   justify-content: space-around;
