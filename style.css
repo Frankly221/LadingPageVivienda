@@ -948,5 +948,9 @@ footer ul .social-media {
   .hero__filter{
     justify-content: center;
   }
+  #ofices2 .title{
+    padding-right: 0px;
+    margin-top: 20px;
+  }
 }
 
