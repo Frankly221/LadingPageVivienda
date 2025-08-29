@@ -284,7 +284,7 @@ footer ul .social-media {
 
 .div-padre{
     display: flex;
-    gap: 12px;
+    gap: 32px;
     align-items: stretch;
     justify-content: center;
     justify-items: center;
@@ -295,7 +295,7 @@ footer ul .social-media {
 }
 
 .container{
-    width: 320px;
+    width: 380px;
     display: flex;
     flex-direction: column;
 }
@@ -307,6 +307,7 @@ footer ul .social-media {
     justify-content: space-between;
     flex-grow: 1;
     padding: 16px;
+    padding-left: 0px;
     
 }
 
