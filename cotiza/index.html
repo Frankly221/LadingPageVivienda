@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>-
+  <link rel="stylesheet" href="cotiza.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- img -->
+   
+   
+   <link rel="preload" as="image" href="/img/logo-vivienda.png" type="image/png"/>
+   <link rel="preload" as="image" href="/img/logo-vivienda-oscuro.png" type="image/png"/>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="logo">
+        <img src="/img/logo-vivienda-oscuro.png" alt="logo" loading="lazy">
+        <div>
+          <strong>LIMA</strong><br>
+          <span>CENTRO DE<br>CONVENCIONES</span>
+        </div>
+      </div>
+      <button class="header__menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <nav class="header__nav">
+        <a href="/" class="header__link">Inicio</a>
+        <a href="/nosotros" class="header__link">Nosotros</a>
+        <a href="/ambiente" class="header__link">Ambientes</a>
+        <a href="/calendario" class="header__link">Calendario</a>
+        <a href="/agenda" class="header__link">Agenda</a>
+        <a href="/cotiza" class="header__link" id="color_estado">Cotiza tu evento</a>
+        <a href="/noticia" class="header__link">Noticia</a>
+        <button class="btn-search">
+          <span class="material-symbols-outlined" style="font-weight: 600;">search</span>
+        </button>
+      </nav>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  
+  
+  <section id="hero">
+    <div class="hero__header">
+      <div class="logo">
+        <div>
+          <strong>Cotiza tu evento</strong><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrapper" >
+     <section>
+    <div class="cotiza-titulo" >
+        <h2>¡Ingresa tus datos y te contactaremos!</h2>
+    </div>
+  </section>
+
+  <section>
+    <form action="" class="cotiza-form">
+        <div class="form-group">
+            <label for="nombre-completo">Nombre completo</label>
+            <input type="text" id="nombre-completo" name="nombre-completo">
+        </div>
+        <div class="form-group">
+            <label for="compania">Compañía/Organización</label>
+            <input type="text" id="compania" name="compania">
+        </div>
+        <div class="form-group">
+            <label for="pais">País</label>
+            <input type="text" id="pais" name="pais">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-section-title">
+            <h3>Acerca de su evento</h3>
+            <p>Cuéntanos un poco más sobre el evento que quieres realizar.</p>
+        </div>
+
+        <div class="form-group">
+            <label for="nombre-evento">Nombre del evento</label>
+            <input type="text" id="nombre-evento" name="nombre-evento">
+        </div>
+        <div class="form-group">
+            <label for="descripcion-evento">Descripción del evento</label>
+            <input type="text" id="descripcion-evento" name="descripcion-evento" class="descripcion-evento">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group1">
+                <label for="cantidad-asistentes">Cantidad de asistentes</label>
+                <select id="cantidad-asistentes" name="cantidad-asistentes">
+                    <option value="" disabled selected>Elegir</option>
+                    <option value="1-50">1-50</option>
+                    <option value="51-200">51-200</option>
+                    <option value="201-500">201-500</option>
+                    <option value="500+">500+</option>
+                </select>
+            </div>
+            <div class="form-group2">
+                <label for="tipo-evento">Tipo de evento</label>
+                <select id="tipo-evento" name="tipo-evento">
+                    <option value="" disabled selected>Elegir</option>
+                    <option value="conferencia">Conferencia</option>
+                    <option value="feria">Feria</option>
+                    <option value="congreso">Congreso</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group-fecha">
+            <label for="fecha-aproximada">Fecha aproximada</label>
+            <input type="text" id="fecha-aproximada" name="fecha-aproximada" placeholder="dd/mm/aaaa" onfocus="(this.type='date')" onblur="(this.type='text')">
+        </div>
+
+        <div class="form-section-title">
+            <h3>Preguntas adicionales</h3>
+        </div>
+
+        <div class="form-group-finally">
+            <label for="como-se-entero">¿Cómo se enteró de Lima Centro de Convenciones?</label>
+            <select id="como-se-entero" name="como-se-entero">
+                <option value="" disabled selected>Elegir</option>
+                <option value="redes-sociales">Redes Sociales</option>
+                <option value="busqueda-web">Búsqueda Web</option>
+                <option value="recomendacion">Recomendación</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="form-submit">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+  </section>
+  </div>
+  
+  <footer>
+    <div class="footer__content">
+      <div class="logo">
+        <img src="/img/logo-vivienda.png" alt="logo" loading="lazy">
+        <div>
+          <strong>LIMA</strong><br>
+          <span>CENTRO DE<br>CONVENCIONES</span>
+        </div>
+      </div>
+      <article>
+        <div>
+          <strong>Copyright © 2019 - LIMA <br> CENTRO DE CONVENCIONES</strong>
+          <p>Ministerio de Vivienda,<br> Construcción y Saneamiento</p>
+        </div>
+        <p><strong>T:</strong> +(51) 399 3600</p>
+        <p><strong>E:</strong> lcceventos@vivienda.gog.pe</p>
+        <p><strong>D:</strong> Av. de la Arqueología 172 con calle Del Comercio, distrito de San Borja, Lima, Perú.</p>
+      </article>
+      <ul class="no-decoration">
+        <li>
+            <a href="https://www.facebook.com/LimaCentrodeConvencionesLCC/"><img src="/img/socialmedia/facebook.svg" alt="Icono" width="32" height="32"></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/lccperu.oficial/"><img src="/img/socialmedia/instagram.svg" alt="Icono" width="32" height="32"></a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/company/viviendaperu/"><img src="/img/socialmedia/in.svg" alt="Icono" width="32" height="32"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="/ambiente/detalles/ambientedt.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="modalEnviar.js" >
+  </script>
+</body>
+</html>
