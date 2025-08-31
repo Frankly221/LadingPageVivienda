@@ -236,9 +236,10 @@ footer {
   max-width: var(--max-width-global);
   margin-inline: auto;
   display: flex;
-  gap: 24px;
+  gap: 12px;
   justify-content: space-evenly;
-  padding: 48px;
+  padding: 48px 24px;
+  flex-wrap: wrap;
 }
 
 .footer__content .logo {
@@ -998,6 +999,27 @@ footer ul .social-media {
 
 /* ✅ Mejora legibilidad en móviles: apila y centra */
 @media (max-width: 768px){
+
+/* Footer responsive para móviles */
+  footer .footer__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  footer .footer__content .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .footer__content ul {
+    justify-content: center;
+    gap: 20px;
+  }
+
+/* --------------------------------------------------------------------- Ambientes --------------------------------------------------*/
   .header__menu-btn {
     display: flex;
   }

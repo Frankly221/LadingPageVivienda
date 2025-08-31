@@ -235,9 +235,10 @@ footer {
   max-width: var(--max-width-global);
   margin-inline: auto;
   display: flex;
-  gap: 24px;
+  gap: 12px;
   justify-content: space-evenly;
-  padding: 48px;
+  padding: 48px 24px;
+  flex-wrap: wrap;
 }
 
 .footer__content .logo {
@@ -426,12 +427,15 @@ li{
   
   footer .footer__content {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px 16px;
+    text-align: center;
   }
 
   footer .footer__content .logo {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   footer .footer__content .logo img {
@@ -449,8 +453,8 @@ li{
   }
 
   footer .footer__content ul {
-    grid-column: 1/3;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
   }
 
 /* --------------------------------------------------------------------- Ambientes --------------------------------------------------*/
