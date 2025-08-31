@@ -292,13 +292,11 @@ footer ul .social-media {
 .segundo{
   padding: 40px 90px;
   padding-bottom: 0px;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 30px;
 }
 
-.segundo img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
 
 .segundo-p{
   padding: 0px 90px;
