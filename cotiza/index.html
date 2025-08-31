@@ -70,19 +70,19 @@
     <form action="" class="cotiza-form">
         <div class="form-group">
             <label for="nombre-completo">Nombre completo</label>
-            <input type="text" id="nombre-completo" name="nombre-completo">
+            <input type="text" id="nombre-completo" name="nombre-completo" required>
         </div>
         <div class="form-group">
             <label for="compania">Compañía/Organización</label>
-            <input type="text" id="compania" name="compania">
+            <input type="text" id="compania" name="compania" required>
         </div>
         <div class="form-group">
             <label for="pais">País</label>
-            <input type="text" id="pais" name="pais">
+            <input type="text" id="pais" name="pais" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
         </div>
 
         <div class="form-section-title">
@@ -92,17 +92,17 @@
 
         <div class="form-group">
             <label for="nombre-evento">Nombre del evento</label>
-            <input type="text" id="nombre-evento" name="nombre-evento">
+            <input type="text" id="nombre-evento" name="nombre-evento" required>
         </div>
         <div class="form-group">
             <label for="descripcion-evento">Descripción del evento</label>
-            <input type="text" id="descripcion-evento" name="descripcion-evento" class="descripcion-evento">
+            <input type="text" id="descripcion-evento" name="descripcion-evento" class="descripcion-evento" required>
         </div>
 
         <div class="form-row">
             <div class="form-group1">
                 <label for="cantidad-asistentes">Cantidad de asistentes</label>
-                <select id="cantidad-asistentes" name="cantidad-asistentes">
+                <select id="cantidad-asistentes" name="cantidad-asistentes" required>
                     <option value="" disabled selected>Elegir</option>
                     <option value="1-50">1-50</option>
                     <option value="51-200">51-200</option>
@@ -112,7 +112,7 @@
             </div>
             <div class="form-group2">
                 <label for="tipo-evento">Tipo de evento</label>
-                <select id="tipo-evento" name="tipo-evento">
+                <select id="tipo-evento" name="tipo-evento" required>
                     <option value="" disabled selected>Elegir</option>
                     <option value="conferencia">Conferencia</option>
                     <option value="feria">Feria</option>
@@ -124,7 +124,7 @@
 
         <div class="form-group-fecha">
             <label for="fecha-aproximada">Fecha aproximada</label>
-            <input type="text" id="fecha-aproximada" name="fecha-aproximada" placeholder="dd/mm/aaaa" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input type="text" id="fecha-aproximada" name="fecha-aproximada" placeholder="dd/mm/aaaa" onfocus="(this.type='date')" onblur="(this.type='text')" required>
         </div>
 
         <div class="form-section-title">
@@ -133,7 +133,7 @@
 
         <div class="form-group-finally">
             <label for="como-se-entero">¿Cómo se enteró de Lima Centro de Convenciones?</label>
-            <select id="como-se-entero" name="como-se-entero">
+            <select id="como-se-entero" name="como-se-entero" required>
                 <option value="" disabled selected>Elegir</option>
                 <option value="redes-sociales">Redes Sociales</option>
                 <option value="busqueda-web">Búsqueda Web</option>
