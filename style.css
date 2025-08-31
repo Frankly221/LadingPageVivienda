@@ -304,6 +304,23 @@ button {
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero__filter select:hover,
+.hero__filter input:hover {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero__filter select:focus,
+.hero__filter input:focus {
+  border: 1px solid var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 2px rgba(90, 145, 155, 0.3);
 }
 
 .hero__filter select:placeholder-shown,
@@ -778,6 +795,21 @@ footer ul .social-media {
 .hero__filter input {
   font-size: 20px;
 }
+
+.hero__filter select:hover,
+.hero__filter input:hover {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero__filter select:focus,
+.hero__filter input:focus {
+  border: 1px solid var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 2px rgba(90, 145, 155, 0.3);
+}
 .hero__filter .btn-filter{
   font-size: 20px;
 }
@@ -960,6 +992,21 @@ footer ul .social-media {
 
   .hero__filter select, .hero__filter input{
     font-size: 16px;
+  }
+
+  .hero__filter select:hover,
+  .hero__filter input:hover {
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .hero__filter select:focus,
+  .hero__filter input:focus {
+    border: 1px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 2px rgba(90, 145, 155, 0.3);
   }
   .hero__filter .btn-filter{
     font-size: 16px;
