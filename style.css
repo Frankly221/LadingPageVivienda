@@ -322,6 +322,14 @@ button {
   background-color: var(--primary-color);
   color: #fff;
   font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero__filter .btn-filter:hover {
+  background-color: #2d5016;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #why {
@@ -769,6 +777,12 @@ footer ul .social-media {
 .hero__filter .btn-filter{
   font-size: 20px;
 }
+
+.hero__filter .btn-filter:hover {
+  background-color: #2d5016;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 .important__list--items h4,p{
   font-size: 24px;
 }
@@ -945,6 +959,12 @@ footer ul .social-media {
   }
   .hero__filter .btn-filter{
     font-size: 16px;
+  }
+
+  .hero__filter .btn-filter:hover {
+    background-color: #2d5016;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   #ofices .title{
     padding-right: 0px;
