@@ -167,7 +167,7 @@ button {
 
 #hero {
   margin-top: calc(var(--height-header) - 24px);
-  background-image: url('/img/noticias/header.avif');
+  background-image: url('../img/noticias/header.avif');
   background-size: cover;
   background-position: center;
   padding: 24px 48px;
