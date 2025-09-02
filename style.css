@@ -607,7 +607,7 @@ button {
 
 #where main {
   max-width: var(--max-width-global);
-  height: 623px;
+  height: 450px;
   margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(2,1fr);
