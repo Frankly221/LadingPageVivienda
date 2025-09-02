@@ -624,6 +624,7 @@ button {
   background-size: cover;
   width: 32vw;
   max-height: 350px;
+  max-width: 600px;
 }
 
 footer {
