@@ -53,6 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const salaSections = Array.from(document.querySelectorAll('section'))
     .filter(sec => sec.querySelector('.sala, .sala2'));
 
+  // Helper para marcar activo
+  const setActive = (btn) => {
+    [listaBtn, tablaBtn].forEach(b => b?.classList.remove('active'));
+    btn?.classList.add('active');
+  };
+
   if (salaSections.length) {
     // Crea un contenedor y mueve dentro todas las secciones de salas (solo una vez)
     let container = document.querySelector('.salas-container');
@@ -63,14 +69,20 @@ document.addEventListener('DOMContentLoaded', () => {
       salaSections.forEach(sec => container.appendChild(sec));
     }
 
+    // Estado inicial: Lista activa
+    setActive(listaBtn);
+    container.classList.remove('grid-3');
+
     // Vista lista (una debajo de otra, comportamiento original)
     listaBtn?.addEventListener('click', () => {
       container.classList.remove('grid-3');
+      setActive(listaBtn);
     });
 
     // Vista tabla (3 por fila)
     tablaBtn?.addEventListener('click', () => {
       container.classList.add('grid-3');
+      setActive(tablaBtn);
     });
   }
 });

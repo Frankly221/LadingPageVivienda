@@ -924,6 +924,17 @@ footer ul .social-media {
   color: white;
 }
 
+.vista .lista,
+.vista .tabla {
+  transition: background-color .2s ease, color .2s ease;
+  cursor: pointer;
+}
+
+.vista .active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 /* Contenedor para agrupar las secciones de salas cuando se vea en tabla */
 .salas-container.grid-3 {
   display: grid;
