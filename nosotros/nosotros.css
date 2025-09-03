@@ -166,8 +166,8 @@ button {
 
 #hero {
   margin-top: calc(var(--height-header) - 24px);
-  background-image: url('../img/ubicacion.avif');
-  background-size: cover;
+  background-image: url('../img/nosotros/1.jpg');
+  background-size: fill;
   background-position: center;
   padding: 24px 48px;
   height: 10dvh;
@@ -375,7 +375,7 @@ footer ul .social-media {
 .second-img img{
   width: 100%;
   height: 500px;
-  object-fit: cover;
+  object-fit: fill;
   
 }
 
