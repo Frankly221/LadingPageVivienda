@@ -94,17 +94,16 @@ $btnPrevofice.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const chatbotBtn = document.getElementById('chatbot-btn');
-  const chatbotContainer = document.getElementById('chatbot-container');
-  const closeChatbotBtn = document.getElementById('close-chatbot-btn');
+  const btn = document.getElementById('chatbot-btn');
+  const container = document.getElementById('chatbot-container');
+  if (!btn || !container) return;
 
-  if (chatbotBtn && chatbotContainer && closeChatbotBtn) {
-    chatbotBtn.addEventListener('click', () => {
-      chatbotContainer.style.display = 'block';
-    });
+  btn.addEventListener('click', () => {
+    container.classList.toggle('open');
+  });
 
-    closeChatbotBtn.addEventListener('click', () => {
-      chatbotContainer.style.display = 'none';
-    });
-  }
+  // Opcional: cerrar con ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') container.classList.remove('open');
+  });
 });

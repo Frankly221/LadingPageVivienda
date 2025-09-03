@@ -991,6 +991,43 @@ footer ul .social-media {
   z-index: 10000;
 }
 
+.message {
+  position: fixed;       /* Fijo en pantalla */
+  bottom: 30px;          /* Separado 20px desde abajo */
+  right: 50px;           /* Separado 20px desde la derecha */
+  z-index: 1000;         /* Para que quede por encima de otros elementos */
+  
+  /* Opcional: darle estilo */
+  background: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.message button {
+  background: none; /* color de ejemplo */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.message img{
+  max-width: 50px;
+  height: 50px;
+}
+
+.message:hover {
+  background-color: #f0f0f0; /* color de ejemplo */
+}
+
+#chatbot-container{
+  display: none;
+}
+
+#chatbot-container.open {
+  display: block;
+}
+
 
 @media (max-width:638px) {
   .ofices2__card{
